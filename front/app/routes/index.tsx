@@ -1,3 +1,7 @@
+import { Link, Outlet } from "@remix-run/react";
+
+import { Test } from "~/components/test"
+
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
@@ -26,6 +30,7 @@ export default function Index() {
             Remix Docs
           </a>
         </li>
+            <Test string={'test'}/>
       </ul>
     </div>
   );
