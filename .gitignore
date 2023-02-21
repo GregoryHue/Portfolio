@@ -1,8 +1,11 @@
-node_modules
 
 .cache/
 .netlify/
 build/
+package-lock.json
+node_modules
+# Keep environment variables out of version control
 .env
 
-package-lock.json
+# CSS is generated from the styles/ folder with SASS files
+css/
