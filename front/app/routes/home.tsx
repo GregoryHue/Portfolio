@@ -19,6 +19,8 @@ const Home = (): ReactElement => {
       <div className="container-text">
         <Typography className="text">
           {t('home.text')}
+          {t('home.text')}
+          {t('home.text')}
         </Typography>
       </div>
     </div>

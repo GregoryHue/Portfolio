@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Quicksand:wght@300;500&display=swap');
 
+@import url('./stars.css');
+
 :root {
   --primary-color: #E0E1DD;
   --secondary-color: #778DA9;
@@ -13,10 +15,6 @@
   --background-color-rgb: 13, 27, 42;
 }
 
-body {
-  background-color: var(--background-color);
-  margin: 0;
-}
 
 .navbar {
   position: fixed;
@@ -43,8 +41,9 @@ body {
 }
 
 .container {
-  margin: 5rem auto 0 auto;
-  width: 1200px;
+  margin: 4rem auto 4rem auto;
+  max-width: 1200px;
+  overflow: scroll;
 
   @media only screen and (max-width: 900px) {
     width: 100%;
