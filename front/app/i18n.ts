@@ -7,5 +7,5 @@ export default {
   // The default namespace of i18next is "translation", but you can customize it here
   defaultNS: 'translation',
   // Disabling suspense is recommended
-  react: {useSuspense: false},
+  react: { useSuspense: false },
 };

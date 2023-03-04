@@ -1,13 +1,13 @@
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import { Link, useLocation } from "react-router-dom";
-import { ReactElement, useState } from "react";
-import { useTranslation } from "react-i18next";
-import { changeLanguage } from "i18next";
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import { Link, useLocation } from 'react-router-dom';
+import { type ReactElement, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { changeLanguage } from 'i18next';
 
-const ProjectsView = (): ReactElement => {
+function ProjectsView(): ReactElement {
   const { t } = useTranslation();
-  const [language, setLanguage] = useState<string | null>("en");
+  const [language, setLanguage] = useState<string | null>('en');
   const location = useLocation();
 
   return (
@@ -19,6 +19,6 @@ const ProjectsView = (): ReactElement => {
       </div>
     </div>
   );
-};
+}
 
 export default ProjectsView;

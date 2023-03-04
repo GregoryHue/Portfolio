@@ -5,7 +5,7 @@ import { type ReactElement, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { changeLanguage } from 'i18next';
 
-function ResumeView(): ReactElement {
+function AllIndex(): ReactElement {
   const { t } = useTranslation();
   const [language, setLanguage] = useState<string | null>('en');
   const location = useLocation();
@@ -14,11 +14,11 @@ function ResumeView(): ReactElement {
     <div className="container">
       <div className="container-title">
         <Typography component="p" className="title">
-          Resume
+          Empty Route
         </Typography>
       </div>
     </div>
   );
 }
 
-export default ResumeView;
+export default AllIndex;

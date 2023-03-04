@@ -1,5 +1,5 @@
-import type { LinksFunction, LoaderArgs, MetaFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
+import type { LinksFunction, LoaderArgs, MetaFunction } from '@remix-run/node';
+import { json } from '@remix-run/node';
 import {
   Links,
   LiveReload,
@@ -7,45 +7,43 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
-  Outlet
-} from "@remix-run/react";
-import { useTranslation } from "react-i18next";
-import i18next from "~/i18next.server";
+  Outlet,
+} from '@remix-run/react';
+import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
+import i18next from '~/i18next.server';
+
+import styles from '~/css/index.css';
+import NavBarComponent from './components/NavbarComponent';
 
 export function useChangeLanguage(locale: string) {
-  let { i18n } = useTranslation();
+  const { i18n } = useTranslation();
   useEffect(() => {
     i18n.changeLanguage(locale);
   }, [locale, i18n]);
 }
 
-export let loader = async ({ request }: LoaderArgs) => {
-  let locale = await i18next.getLocale(request);
+export const loader = async ({ request }: LoaderArgs) => {
+  const locale = await i18next.getLocale(request);
   return json({ locale });
 };
 
-export let handle = {
-  i18n: "translation"
+export const handle = {
+  i18n: 'translation',
 };
 
-import styles from "~/css/index.css";
-import { useEffect } from "react";
-import NavBarComponent from "./components/NavbarComponent";
-
-export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: styles }];
-};
+export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }];
 
 export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "New Remix App",
-  viewport: "width=device-width,initial-scale=1"
+  charset: 'utf-8',
+  title: 'Grégory Hue | Portfolio',
+  viewport: 'width=device-width,initial-scale=1',
 });
 
 export default function App() {
-  let { locale } = useLoaderData<typeof loader>();
+  const { locale } = useLoaderData<typeof loader>();
 
-  let { i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   useChangeLanguage(locale);
 
@@ -57,13 +55,15 @@ export default function App() {
       </head>
       <body>
         <NavBarComponent />
-        <div className="frame"><Outlet /></div>
+        <div className="frame">
+          <Outlet />
+        </div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
+        <div id="stars" />
+        <div id="stars2" />
+        <div id="stars3" />
       </body>
     </html>
   );
