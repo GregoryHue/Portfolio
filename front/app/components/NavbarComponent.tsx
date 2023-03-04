@@ -19,10 +19,10 @@ const NavBarComponent = (): ReactElement => {
   return (
       <Box sx={{ display: { xs: 'block', md: 'block' } }} className="navbar">
         <ul>
-          {pages.map((page) => (
-            <li>
+          {pages.map((page, index) => (
+            <li key={index}>
               <Link style={{ textDecoration: 'none' }} key={page.title} to={page.to}>
-                <Typography variant="h5" component="p" className={location.pathname.includes(page.to) ? 'active' : null}>
+                <Typography variant="h5" component="p">
                   {page.title}
                 </Typography>
               </Link>

@@ -30,6 +30,7 @@ export let handle = {
 
 import styles from "~/css/index.css";
 import { useEffect } from "react";
+import NavBarComponent from "./components/NavbarComponent";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: styles }];
@@ -55,10 +56,14 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <NavBarComponent />
+        <div className="frame"><Outlet /></div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
       </body>
     </html>
   );

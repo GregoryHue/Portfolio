@@ -7,7 +7,7 @@ const Home = (): ReactElement => {
   const { t } = useTranslation()
 
   return (
-    <div>
+    <div className="container">
       <div className="container-title">
         <Typography className="name">
           Gregory Hue
@@ -18,8 +18,6 @@ const Home = (): ReactElement => {
       </div>
       <div className="container-text">
         <Typography className="text">
-          {t('home.text')}
-          {t('home.text')}
           {t('home.text')}
         </Typography>
       </div>
