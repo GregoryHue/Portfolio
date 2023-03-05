@@ -7,11 +7,11 @@ function Home(): ReactElement {
 
   return (
     <div className="container">
-      <div className="container-title">
+      <div className="home-title">
         <Typography className="name">Gregory Hue</Typography>
         <Typography className="sub-title">IT Engineer</Typography>
       </div>
-      <div className="container-text">
+      <div className="home-text">
         <Typography className="text">{t('home.text')}</Typography>
       </div>
     </div>

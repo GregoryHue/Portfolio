@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Quicksand:wght@300;500&display=swap');
 
 @import url('./stars.css');
+@import url('./home.css');
+@import url('./resume.css');
 
 :root {
   --primary-color: #e0e1dd;
@@ -37,6 +39,7 @@
         text-decoration: none;
         display: block;
         position: relative;
+        padding-bottom: 6px;
 
         p::after {
           content: '';
@@ -88,49 +91,5 @@
 
   @media only screen and (max-width: 900px) {
     max-width: 100%;
-  }
-}
-
-.container-title {
-  .name {
-    color: var(--primary-color);
-    font-size: 5rem !important;
-    text-align: center;
-    font-weight: 400 !important;
-    font-family: 'Bungee Hairline', cursive !important;
-  }
-
-  .title {
-    color: var(--primary-color);
-    font-size: 4rem !important;
-    text-align: center;
-    font-weight: 400 !important;
-    font-family: 'Bungee Hairline', cursive !important;
-  }
-
-  .sub-title {
-    color: var(--primary-color);
-    font-size: 3rem !important;
-    text-align: center;
-    font-weight: 500 !important;
-    font-family: 'Quicksand', sans-serif !important;
-  }
-}
-
-.container-text {
-  width: 100%;
-  margin: 0 auto;
-
-  .text {
-    color: var(--primary-color);
-    font-size: 1.1rem !important;
-    text-align: justify;
-    text-justify: auto;
-    white-space: pre-line;
-    font-weight: 500 !important;
-    font-family: 'Quicksand', sans-serif !important;
-    background: -webkit-linear-gradient(var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
