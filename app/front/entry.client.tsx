@@ -30,7 +30,7 @@ i18next
     },
   })
   .then(() =>
-    // After i18next has been initialized, we can hydrate the app
+    // After i18next has been initialized, we can hydrate the front
     // We need to wait to ensure translations are loaded before the hydration
     // Here wrap RemixBrowser in I18nextProvider from react-i18next
     hydrateRoot(

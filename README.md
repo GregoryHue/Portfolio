@@ -17,7 +17,7 @@ Empty
 ## Structure
 
 ```
-front/
+app/
 .gitignore
 index.html
 LICENSE

@@ -45,7 +45,7 @@ export default async function handleRequest(
       },
     });
 
-  // Then you can render your app wrapped in the I18nextProvider as in the
+  // Then you can render your front wrapped in the I18nextProvider as in the
   // entry.client file
   const markup = renderToString(
     <I18nextProvider i18n={instance}>
