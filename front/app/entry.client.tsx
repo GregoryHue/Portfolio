@@ -7,6 +7,7 @@ import { I18nextProvider, initReactI18next } from 'react-i18next';
 import { getInitialNamespaces } from 'remix-i18next';
 import i18n from './i18n'; // your i18n configuration file
 
+
 i18next
   .use(initReactI18next) // Tell i18next to use the react-i18next plugin
   .use(LanguageDetector) // Setup a client-side language detector
@@ -34,7 +35,8 @@ i18next
     // Here wrap RemixBrowser in I18nextProvider from react-i18next
     hydrateRoot(
       document,
-      <I18nextProvider i18n={i18next}>
-        <RemixBrowser />
-      </I18nextProvider>,
-    ));
+        <I18nextProvider i18n={i18next}>
+          <RemixBrowser />
+        </I18nextProvider>
+    ),
+  );

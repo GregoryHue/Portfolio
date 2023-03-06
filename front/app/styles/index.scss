@@ -41,6 +41,12 @@
         position: relative;
         padding-bottom: 6px;
 
+        p {
+          font-size: 1.5rem !important;
+          font-weight: 300 !important;
+          font-family: 'Quicksand', sans-serif !important;
+        }
+
         p::after {
           content: '';
           position: absolute;
@@ -79,6 +85,17 @@
         }
       }
     }
+
+    .language-buttons {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+
+      p {
+        font-weight: 300 !important;
+        font-family: 'Quicksand', sans-serif !important;
+      }
+    }
   }
 }
 
@@ -88,6 +105,10 @@
   padding: 24px;
   box-shadow: 0 0 24px 24px rgba(var(--background-color-rgb), 0.8);
   background-color: rgba(var(--background-color-rgb), 0.8);
+
+  @media only screen and (max-width: 1200px) {
+    max-width: 80%;
+  }
 
   @media only screen and (max-width: 900px) {
     max-width: 100%;

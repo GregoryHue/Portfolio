@@ -7,6 +7,16 @@ import { renderToString } from 'react-dom/server';
 import { I18nextProvider, initReactI18next } from 'react-i18next';
 import i18next from './i18next.server';
 import i18n from './i18n'; // your i18n configuration file
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#e0e1dd',
+      contrastText: '#1b263b',
+    },
+  },
+});
 
 export default async function handleRequest(
   request: Request,
@@ -39,7 +49,9 @@ export default async function handleRequest(
   // entry.client file
   const markup = renderToString(
     <I18nextProvider i18n={instance}>
-      <RemixServer context={context} url={request.url} />
+      <ThemeProvider theme={theme}>
+        <RemixServer context={context} url={request.url} />
+      </ThemeProvider>
     </I18nextProvider>,
   );
 

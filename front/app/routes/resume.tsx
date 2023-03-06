@@ -1,9 +1,5 @@
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { Link, useLocation } from 'react-router-dom';
-import { type ReactElement, useState } from 'react';
+import { type ReactElement } from 'react';
 import { useTranslation } from 'react-i18next';
-import { changeLanguage } from 'i18next';
 import ResumeText from '~/components/ResumeText';
 import ResumeSubTitle from '~/components/ResumeSubTitle';
 import ResumeTitle from '~/components/ResumeTitle';
@@ -12,8 +8,6 @@ import Divider from '@mui/material/Divider';
 
 function ResumeView(): ReactElement {
   const { t } = useTranslation();
-  const [language, setLanguage] = useState<string | null>('en');
-  const location = useLocation();
 
   return (
     <div className="container">
