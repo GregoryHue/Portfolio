@@ -56,7 +56,9 @@ export default function App() {
       <body>
         <NavBarComponent />
         <div className="frame">
-          <Outlet />
+          <div className="container">
+            <Outlet />
+          </div>
         </div>
         <ScrollRestoration />
         <Scripts />

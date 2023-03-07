@@ -10,7 +10,7 @@ function ResumeView(): ReactElement {
   const { t } = useTranslation();
 
   return (
-    <div className="container">
+    <div>
       <ResumeSection message={'Education'} />
       <ResumeTitle
         left={t('resume.formation.cesi.title-left')}

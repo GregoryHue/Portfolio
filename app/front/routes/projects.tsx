@@ -4,7 +4,7 @@ import { type ReactElement } from 'react';
 function ProjectsView(): ReactElement {
 
   return (
-    <div className="container">
+    <div>
       <div className="home-title">
         <Typography component="p" className="title">
           Projects
