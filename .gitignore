@@ -3,6 +3,8 @@
 .netlify/
 build/
 
+.next/
+
 
 # Package-lock
 package-lock.json
