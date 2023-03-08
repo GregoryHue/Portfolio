@@ -1,0 +1,71 @@
+{
+    "navbar": {
+      "home": "Home",
+      "resume": "Resume",
+      "projects": "Projects"
+    },
+    "home": {
+      "text": "I am an IT Engineer with a passion for web & software development. I have a curiosity for the vast world that is IT and I wish to learn more in many domains. I have in interest in data mining and machine learning, although I have little knowledge in those field for the moment. I teach myself through personal projects and I try to learn every day. I test new technologies, languages, frameworks and create stimulating projects with them.\n\nOn this page you will find my resume, but most importantly, those projects I previously spoke about and many details about them: the reasons I came up with those projects, my thought process in the selection of technologies, the challenges I expected and those that I did not expect, etc ..."
+    },
+    "resume": {
+      "formation": {
+        "cesi": {
+          "title-left": "IT Engineer diploma",
+          "title-right": "2017 - 2022",
+          "sub-title-left": "CESI",
+          "sub-title-right": "Rouen",
+          "text": "- Learning autonomously with PBL method.\n- Several group projects."
+        },"bac": {
+          "title-left": "Baccalauréat",
+          "title-right": "2014 - 2017",
+          "sub-title-left": "Lycée de la côté d'Albâtre",
+          "sub-title-right": "Saint Valéry en Caux",
+          "text": "Engineering Sciences, speciality: Computer science and digital sciences"
+        }
+      },
+      "pro-exp": {
+        "jamnik": {
+          "title-left": "Full stack developer",
+          "title-right": "Jun 2022 - Jan 2023",
+          "sub-title-left": "Mizarstvo Jamnik",
+          "sub-title-right": "Metvode (Slovenia)",
+          "text": "- Conception, development and deployment of a dynamic web site for a small slovenian woodworking company\n- I used: React, Django, Vite, PostgreSQL, Bash, DigitalOcean"
+        },
+        "quiid1": {
+          "title-left": "Full stack developer",
+          "title-right": "Jan 2022 - Jun 2022",
+          "sub-title-left": "QUIID",
+          "sub-title-right": "Rouen",
+          "text": "- Full stack React/Django developement on a web-application called QUIID[HUB]\n- Conception and development of a processus for a client to extract, restructure and visiualize data from a specific Excel format\n- Formation of a first year student: initiation to web development and OOP."
+        },
+        "quiid2": {
+          "title-left": "Full stack developer",
+          "title-right": "Oct 2020 - Jan 2021",
+          "sub-title-left": "QUIID",
+          "sub-title-right": "Rouen",
+          "text": "- Full stack React/Django developement on a web-application called QUIID[CHEM]\n- Development of features and improvements for the web-application.\n- Introduction to data mining."
+        },
+        "greenbig": {
+          "title-left": "Embedded Software developer",
+          "title-right": "Jan 2020 - Apr 2020",
+          "sub-title-left": "GreenBig",
+          "sub-title-right": "Rouen",
+          "text": "- Development on Unity3D.\n- Modifications and improvements of the HMI of a B:bot machine."
+        },
+        "artelia": {
+          "title-left": "Web developper",
+          "title-right": "Apr 2019 - Jul 2019",
+          "sub-title-left": "Artelia",
+          "sub-title-right": "Le Havre",
+          "text": "- Web development with the PHP Slim framework on a web-application for ARTELIA's customers.\n- Additions of features and improvements."
+        },
+        "kaf-wan": {
+          "title-left": "IT technical support hotline",
+          "title-right": "Sep 2018 - Oct 2018",
+          "sub-title-left": "KAEFER WANNER",
+          "sub-title-right": "Rouen",
+          "text": "- Level 1 and 2 support.\n- Migration of Windows 7 workstations to Windows 10."
+        }
+      }
+    }
+  }
