@@ -2,6 +2,7 @@
 .netlify/
 .vscode/
 
+css/
 build/
 node_modules/
 

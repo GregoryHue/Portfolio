@@ -1,0 +1,93 @@
+
+.resume-section {
+  width: 100%;
+  overflow: auto;
+  display: block;
+  position: relative;
+
+  .section {
+    overflow: hidden;
+    color: var(--primary-color);
+    font-size: 2rem !important;
+    text-align: left;
+    font-weight: 400 !important;
+    font-family: 'Bungee Hairline', cursive !important;
+  }
+}
+
+.resume-title {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  .title {
+    color: var(--primary-color);
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+    font-family: 'Quicksand', sans-serif !important;
+
+    &.left {
+      width: 60%;
+      float: left;
+      text-align: left;
+    }
+
+    &.right {
+      width: 40%;
+      float: right;
+      text-align: right;
+    }
+  }
+}
+
+.resume-sub-title {
+  width: 100%;
+  overflow: auto;
+  display: block;
+  position: relative;
+
+  .sub-title {
+    width: 50%;
+    color: var(--primary-color);
+    font-size: 1.2rem !important;
+    font-weight: 300 !important;
+    white-space: pre-line;
+    font-family: 'Quicksand', sans-serif !important;
+
+    &.left {
+      float: left;
+      text-align: left;
+    }
+
+    &.right {
+      float: right;
+      text-align: right;
+    }
+  }
+}
+
+.resume-text {
+  width: 100%;
+  overflow: auto;
+  display: block;
+  position: relative;
+
+  .text {
+    color: var(--primary-color);
+    font-size: 1rem !important;
+    white-space: pre-line;
+    font-weight: 300 !important;
+    font-family: 'Quicksand', sans-serif !important;
+  }
+}
+
+.divider {
+  margin: 12px 0 !important;
+  background-color: var(--primary-color);
+  &.large {
+    width: 100%;
+  }
+  &.medium {
+    width: 40%;
+  }
+}

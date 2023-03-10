@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "run-s \"build:*\"",
+    "build:css": "npm run generate:css -- --style=compressed",
+    "build:remix": "remix build",
+    "dev": "run-p \"dev:*\"",
+    "dev:css": "npm run generate:css -- --watch",
+    "dev:remix": "remix dev",
+    "generate:css": "sass app/styles/:app/css/",
+    "format": "prettier-eslint --write \"**/**/*.{ts,tsx,scss}\"",
+    "start": "cross-env NODE_ENV=production netlify dev",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.12",
+    "@netlify/functions": "^1.3.0",
+    "@remix-run/netlify": "^1.14.1",
+    "@remix-run/node": "^1.14.1",
+    "@remix-run/react": "^1.14.1",
+    "cross-env": "^7.0.3",
+    "isbot": "latest",
+    "npm-run-all": "^4.1.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.58.3"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.14.1",
+    "@remix-run/eslint-config": "^1.14.1",
+    "@remix-run/serve": "^1.14.1",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "eslint": "^8.35.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.8.4",
+    "prettier-eslint-cli": "^7.1.0",
+    "tailwindcss": "^3.2.7",
+    "typescript": "^4.9.5"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
