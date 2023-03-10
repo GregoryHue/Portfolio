@@ -1,17 +1,19 @@
-"use client"; 
+import Typography from '@mui/material/Typography';
+import { type ReactElement } from 'react';
 
-import { Typography } from "@mui/material";
+function AllIndex(): ReactElement {
 
-export default function Home() {
   return (
-    <main>
+    <div>
       <div className="home-title">
         <Typography className="name">Gregory Hue</Typography>
         <Typography className="sub-title">IT Engineer</Typography>
       </div>
       <div className="home-text">
-        <Typography className="text">{"text"}</Typography>
+        <Typography className="text">{'home.text'}</Typography>
       </div>
-    </main>
+    </div>
   );
 }
+
+export default AllIndex;

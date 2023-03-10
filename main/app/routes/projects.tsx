@@ -1,8 +1,8 @@
-"use client";
-import Typography from "@mui/material/Typography";
-import { type ReactElement } from "react";
+import Typography from '@mui/material/Typography';
+import { type ReactElement } from 'react';
 
-function Projects(): ReactElement {
+function ProjectsView(): ReactElement {
+
   return (
     <div>
       <div className="home-title">
@@ -14,4 +14,4 @@ function Projects(): ReactElement {
   );
 }
 
-export default Projects;
+export default ProjectsView;
