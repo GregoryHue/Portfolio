@@ -1,10 +1,11 @@
-.cache/
-.netlify/
-.vscode/
+**/.cache/
+**/.netlify/
+**/.vscode/
 
-css/
-build/
-node_modules/
+**/css/
+**/build/
+**/node_modules/
+**/migrations/
 
 package-lock.json
 
