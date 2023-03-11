@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === 'production') {
   prisma = new PrismaClient()
   prisma.$connect()
 } else {
-  if (!global.__db) {
+  if (global.__db == null) {
     global.__db = new PrismaClient()
     global.__db.$connect()
   }

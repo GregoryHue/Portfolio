@@ -1,4 +1,9 @@
-import { json, type LoaderArgs, type MetaFunction, type LinksFunction } from '@remix-run/node'
+import {
+  json,
+  type LoaderArgs,
+  type MetaFunction,
+  type LinksFunction
+} from '@remix-run/node'
 import {
   Links,
   LiveReload,
