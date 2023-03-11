@@ -26,10 +26,16 @@
     "@remix-run/node": "^1.14.1",
     "@remix-run/react": "^1.14.1",
     "cross-env": "^7.0.3",
+    "i18next": "^22.4.11",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-fs-backend": "^2.1.1",
+    "i18next-http-backend": "^2.1.1",
     "isbot": "latest",
     "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.0",
+    "remix-i18next": "^5.1.0",
     "sass": "^1.59.2"
   },
   "devDependencies": {

@@ -1,0 +1,83 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "resume": "CV",
+    "projects": "Projets"
+  },
+  "home": {
+    "text": "Je suis un ingénieur informatique passionné par le développement Web et logiciel. J'ai une curiosité pour le vaste monde qu'est l'informatique et je souhaite en savoir plus dans de nombreux domaines. J'ai un intérêt pour la fouille de données et l'apprentissage automatique, même si j'ai peu de connaissances dans ces domaines pour le moment. Je m'instruis au travers de projets personnels et j'essaie d'apprendre tous les jours. Je teste de nouvelles technologies, langages, frameworks et crée des projets stimulants avec.\n\nSur cette page, vous trouverez mon CV, mais surtout, les projets dont j'ai parlé précédemment et de nombreux détails à leur sujet : les raisons pour lesquelles j'ai entrepris ces projets, ma réflexion dans le choix des technologies, les obstacles auxquels je m'attendais et ceux auxquels je ne m'attendais pas, etc ..."
+  },
+  "resume": {
+    "title": {
+      "formation": "Formation",
+      "pro-exp": "Expériences professionnelles",
+      "techno": {
+        "technologies": "Technologies",
+        "framework": "Frameworks",
+        "languages": "Langages"
+      }
+    },
+    "content": {
+      "formation": {
+        "cesi": {
+          "title-left": "Diplôme d'Ingénieur en Informatique",
+          "title-right": "2017 - 2022",
+          "sub-title-left": "CESI",
+          "sub-title-right": "Rouen",
+          "text": "- Apprentissage en autonomie avec la méthode PBL.\n- Réalisation de projets en groupe."
+        },
+        "bac": {
+          "title-left": "Baccalauréat",
+          "title-right": "2014 - 2017",
+          "sub-title-left": "Lycée de la côté d'Albâtre",
+          "sub-title-right": "Saint Valéry en Caux",
+          "text": "Science de l'Ingénieur, spécialité ESN"
+        }
+      },
+      "pro-exp": {
+        "jamnik": {
+          "title-left": "Développeur full stack",
+          "title-right": "Juin 2022 - Jan 2023",
+          "sub-title-left": "Mizarstvo Jamnik",
+          "sub-title-right": "Metvode (Slovénie)",
+          "text": "- Conception, développement et déploiement d'un site web dynamique pour une entreprise familiale slovène de menuiserie\n- Utilisation de : React, Django, Vite, PostgreSQL, Bash, DigitalOcean"
+        },
+        "quiid1": {
+          "title-left": "Développeur full stack",
+          "title-right": "Jan 2022 - Juin 2022",
+          "sub-title-left": "QUIID",
+          "sub-title-right": "Rouen",
+          "text": "- Développement full-stack React/Django sur deux web-applications intitulées QUIID[HUB]\n- Conception et développement d'un processus pour un client pour extraire, restructurer et visualiser des données à partir d'un format Excel spécifique\n- Formation d'un étudiant de première année : initiation au développement web et à la POO."
+        },
+        "quiid2": {
+          "title-left": "Développeur full stack",
+          "title-right": "Oct 2020 - Jan 2021",
+          "sub-title-left": "QUIID",
+          "sub-title-right": "Rouen",
+          "text": "- Développement full-stack React/Django sur deux web-applications intitulées QUIID[CHEM]\n- Développement de fonctionnalités et améliorations pour l'application web\n- Introduction à la fouille de données"
+        },
+        "greenbig": {
+          "title-left": "Développeur logiciel embarqué",
+          "title-right": "Jan 2020 - Avr 2020",
+          "sub-title-left": "GreenBig",
+          "sub-title-right": "Rouen",
+          "text": "- Développement sur Unity3D\n- Modifications et améliorations de l'IHM d'une machine B:bot"
+        },
+        "artelia": {
+          "title-left": "Développeur web",
+          "title-right": "Avr 2019 - Juillet 2019",
+          "sub-title-left": "Artelia",
+          "sub-title-right": "Le Havre",
+          "text": "- Développement web avec le framework PHP Slim sur une web-application pour les clients d'ARTELIA\n- Ajouts de fonctionnalités et améliorations"
+        },
+        "kaf-wan": {
+          "title-left": "Support technique hotline en informatique",
+          "title-right": "Sep 2018 - Oct 2018",
+          "sub-title-left": "KAEFER WANNER",
+          "sub-title-right": "Rouen",
+          "text": "- Support niveaux 1 et 2\n- Migration des postes de travail Windows 7 vers Windows 10"
+        }
+      }
+    }
+  }
+}
