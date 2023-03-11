@@ -1,3 +1,7 @@
+
+[[database]]
+  command = "npx prisma init --datasource-provider sqlite && npx prisma db seed"
+
 [build]
   command = "npm run build"
   publish = "public"
