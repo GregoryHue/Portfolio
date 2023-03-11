@@ -1,6 +1,7 @@
 import { prisma } from '~/utils/prisma.server'
 import { useLoaderData } from '@remix-run/react'
 import { json, type LoaderFunction } from '@remix-run/node'
+import {Button, Typography} from '@mui/material'
 
 export const loader: LoaderFunction = async () => {
   const techno = await prisma.text.findFirst({
@@ -17,13 +18,10 @@ export default function Index() {
       <h1>Welcome to Remix</h1>
       <ul>
         <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
+          <Typography
           >
             {techno.content ? techno.content : "15m Quickstart Blog Tutorial"}
-          </a>
+          </Typography>
         </li>
         <li>
           <a
@@ -40,6 +38,7 @@ export default function Index() {
           </a>
         </li>
       </ul>
+      <Button> test </Button>
     </div>
   );
 }
