@@ -1,4 +1,3 @@
-import Typography from '@mui/material/Typography'
 import { type ReactElement } from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -8,11 +7,11 @@ function AllIndex (): ReactElement {
   return (
     <div>
       <div className="home-title">
-        <Typography className="name">Gregory Hue</Typography>
-        <Typography className="sub-title">IT Engineer</Typography>
+        <p className="name">Gregory Hue</p>
+        <p className="sub-title">IT Engineer</p>
       </div>
       <div className="home-text">
-        <Typography className="text">{t('home.text')}</Typography>
+        <p className="text">{t('home.text')}</p>
       </div>
     </div>
   )

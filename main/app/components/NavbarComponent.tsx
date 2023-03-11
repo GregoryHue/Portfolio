@@ -1,5 +1,4 @@
 import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography/'
 import { Link, useLocation } from 'react-router-dom'
 import { type ReactElement, useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -32,13 +31,13 @@ function NavBarComponent (): ReactElement {
               key={page.title}
               to={page.to}
             >
-              <Typography
+              <p
                 className={
                   location.pathname === page.to ? 'active' : 'inactive'
                 }
               >
                 {page.title}
-              </Typography>
+              </p>
             </Link>
           </li>
         ))}

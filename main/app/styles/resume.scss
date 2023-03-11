@@ -3,6 +3,7 @@
   overflow: auto;
   display: block;
   position: relative;
+  overflow: hidden;
 
   .section {
     overflow: hidden;
@@ -11,6 +12,7 @@
     text-align: left;
     font-weight: 400 !important;
     font-family: 'Bungee Hairline', cursive !important;
+    margin: -12px 0 -12px 0;
   }
 }
 
@@ -24,6 +26,7 @@
     font-size: 1.5rem !important;
     font-weight: 500 !important;
     font-family: 'Quicksand', sans-serif !important;
+    margin: 0;
 
     &.left {
       width: 60%;
@@ -52,6 +55,7 @@
     font-weight: 300 !important;
     white-space: pre-line;
     font-family: 'Quicksand', sans-serif !important;
+    margin: 0;
 
     &.left {
       float: left;

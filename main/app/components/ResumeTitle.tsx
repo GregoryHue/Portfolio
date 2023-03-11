@@ -1,13 +1,12 @@
-import Typography from '@mui/material/Typography'
 import { type ReactElement } from 'react'
 
 function ResumeTitle (props: { left: string, right: string }): ReactElement {
   return (
     <div className="resume-title">
-      <Typography className="title left">{props.left}</Typography>
+      <p className="title left">{props.left}</p>
       {props.right
         ? (
-        <Typography className="title right">{props.right}</Typography>
+        <p className="title right">{props.right}</p>
           )
         : null}
     </div>

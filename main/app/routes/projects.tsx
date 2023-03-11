@@ -1,13 +1,12 @@
-import Typography from '@mui/material/Typography'
 import { type ReactElement } from 'react'
 
 function ProjectsView (): ReactElement {
   return (
     <div>
       <div className="home-title">
-        <Typography component="p" className="title">
+        <p className="title">
           Projects
-        </Typography>
+        </p>
       </div>
     </div>
   )
