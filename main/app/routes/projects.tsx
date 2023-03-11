@@ -1,8 +1,7 @@
-import Typography from '@mui/material/Typography';
-import { type ReactElement } from 'react';
+import Typography from '@mui/material/Typography'
+import { type ReactElement } from 'react'
 
-function ProjectsView(): ReactElement {
-
+function ProjectsView (): ReactElement {
   return (
     <div>
       <div className="home-title">
@@ -11,7 +10,7 @@ function ProjectsView(): ReactElement {
         </Typography>
       </div>
     </div>
-  );
+  )
 }
 
-export default ProjectsView;
+export default ProjectsView

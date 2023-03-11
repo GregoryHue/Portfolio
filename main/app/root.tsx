@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import { json, type LoaderArgs, type MetaFunction, type LinksFunction } from '@remix-run/node'
 import {
   Links,
   LiveReload,
@@ -6,24 +6,48 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
-import type { LinksFunction } from "@remix-run/node";
-import styles from "~/css/index.css";
-import NavBarComponent from "./components/NavbarComponent";
+  useLoaderData
+} from '@remix-run/react'
+import i18next from '~/i18next.server'
+import { useTranslation } from 'react-i18next'
 
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: styles },
-];
+import styles from '~/css/index.css'
+import NavBarComponent from './components/NavbarComponent'
+import { useEffect } from 'react'
+
+export function useChangeLanguage (locale: string) {
+  const { i18n } = useTranslation()
+  useEffect(() => {
+    i18n.changeLanguage(locale)
+  }, [locale, i18n])
+}
+
+export async function loader ({ request }: LoaderArgs) {
+  const locale = await i18next.getLocale(request)
+  return json({ locale })
+}
+
+export const handle = {
+  i18n: 'common'
+}
+
+export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
 
 export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "New Remix App",
-  viewport: "width=device-width,initial-scale=1",
-});
+  charset: 'utf-8',
+  title: 'Grégory Hue | Portfolio',
+  viewport: 'width=device-width,initial-scale=1'
+})
 
-export default function App() {
+export default function App () {
+  const { locale } = useLoaderData<typeof loader>()
+
+  const { i18n } = useTranslation()
+
+  useChangeLanguage(locale)
+
   return (
-    <html lang="en">
+    <html lang={locale} dir={i18n.dir()}>
       <head>
         <Meta />
         <Links />
@@ -43,5 +67,5 @@ export default function App() {
         <div className="stars3"></div>
       </body>
     </html>
-  );
+  )
 }
