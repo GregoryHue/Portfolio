@@ -1,6 +1,6 @@
 
-[[database]]
-  command = "npx prisma init --datasource-provider sqlite && npx prisma db seed"
+[database]
+  command = "npx prisma migrate dev --name init"
 
 [build]
   command = "npm run build"
