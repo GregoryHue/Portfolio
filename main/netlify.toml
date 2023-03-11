@@ -1,9 +1,5 @@
-
-[database]
-  command = "npx prisma migrate dev --name init"
-
 [build]
-  command = "npm run build"
+  command = "npx prisma migrate dev --name init && npm run build"
   publish = "public"
 
 [dev]
