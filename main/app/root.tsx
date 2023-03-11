@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -7,6 +7,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import styles from '~/css/index.css'
+
+export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -26,6 +29,9 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <div className="stars"></div>
+        <div className="stars2"></div>
+        <div className="stars3"></div>
       </body>
     </html>
   );
