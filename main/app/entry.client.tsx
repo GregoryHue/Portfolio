@@ -8,6 +8,8 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import Backend from "i18next-http-backend";
 import { getInitialNamespaces } from "remix-i18next";
 
+console.log('entry.client.ts', __dirname)
+
 async function hydrate() {
   await i18next
     .use(initReactI18next) // Tell i18next to use the react-i18next plugin
