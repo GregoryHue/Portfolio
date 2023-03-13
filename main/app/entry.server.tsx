@@ -13,8 +13,6 @@ import { resolve } from "node:path";
 
 const ABORT_DELAY = 5000;
 
-console.log('entry.server.ts', __dirname)
-
 export default async function handleRequest(
   request: Request,
   responseStatusCode: number,
