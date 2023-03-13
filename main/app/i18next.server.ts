@@ -13,7 +13,7 @@ let i18next = new RemixI18Next({
   i18next: {
     ...i18n,
     backend: {
-      loadPath: process.env.NODE_ENV === 'production' ? resolve("./locales/{{lng}}/{{ns}}.json") : resolve("./public/locales/{{lng}}/{{ns}}.json"),
+      loadPath: process.env.NODE_ENV === 'production' ? resolve("locales/{{lng}}/{{ns}}.json") : resolve("./public/locales/{{lng}}/{{ns}}.json"),
     },
   },
   backend: Backend,
