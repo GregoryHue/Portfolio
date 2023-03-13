@@ -10,7 +10,7 @@
     "dev:remix": "remix dev",
     "generate:css": "sass app/styles/:app/css/",
     "format": "prettier-eslint --write \"**/**/*.{ts,tsx,scss}\"",
-    "start": "cross-env NODE_ENV=production netlify dev",
+    "start": "cross-env NODE_ENV=production netlify build",
     "typecheck": "tsc"
   },
   "prisma": {
