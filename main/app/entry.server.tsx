@@ -34,8 +34,7 @@ export default async function handleRequest(
       ...i18n, // spread the configuration
       lng, // The locale we detected above
       ns, // The namespaces the routes about to render wants to use
-      backend: { 
-        loadPath: process.env.NODE_ENV === 'production' ? resolve("locales/{{lng}}/{{ns}}.json") : resolve("./public/locales/{{lng}}/{{ns}}.json"), },
+      backend: { loadPath: "./public/locales/{{lng}}/{{ns}}.json" },
     });
 
   return new Promise((resolve, reject) => {
